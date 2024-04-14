@@ -16,14 +16,14 @@ The editor extension matches thumbnails and prefabs by looking for thumbnails in
 
 ## Settings
 * ThumbGen GameObject -> ThumbnailGenerator Component: 
-..* Target Render Texture: 2D texture image that will be used to take snapshots of the prefabs. Width and Height must match with the setting below.
-..* Thumbnail Camera: Main Camera that will take snapshots of the prefab. When the scene runs, the camera will not actually render to the display.
-..* Thumbnail Width
-..* Thumbnail Height
-..* Export File Path Root: root folder where the thumnails will be saved. The tree structure will be maintained.
+  * Target Render Texture: 2D texture image that will be used to take snapshots of the prefabs. Width and Height must match with the setting below.
+  * Thumbnail Camera: Main Camera that will take snapshots of the prefab. When the scene runs, the camera will not actually render to the display.
+  * Thumbnail Width
+  * Thumbnail Height
+  * Export File Path Root: root folder where the thumnails will be saved. The tree structure will be maintained.
 * ThumbGen GameObject -> Multi Object Processor Component: 
-..* Asset Dir: root folder to traverse looking for prefabs
-..* Excluded Dirs: comma-separated list of directory name to exclude from processing
+  * Asset Dir: root folder to traverse looking for prefabs
+  * Excluded Dirs: comma-separated list of directory name to exclude from processing
 
 
 # Thanks
