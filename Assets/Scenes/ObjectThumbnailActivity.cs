@@ -48,15 +48,6 @@ namespace ThumbGenExamples
         private void MoveCamera(Camera cam, GameObject go)
         {
             Bounds bounds = go.GetComponent<Renderer>().bounds;
-            float cameraDistance = 0.5f; // Constant factor
-            Vector3 objectSizes = bounds.max - bounds.min;
-            float objectSize = Mathf.Max(objectSizes.x, objectSizes.y, objectSizes.z);
-            float cameraView = 2.0f * Mathf.Tan(0.5f * Mathf.Deg2Rad * cam.fieldOfView); // Visible height 1 meter in front
-            float distance = cameraDistance * objectSize / cameraView; // Combined wanted distance from the object
-            distance += 0.5f * objectSize; // Estimated offset from the center to the outside of the object
-            
-            //cam.transform.position = bounds.center + distance * Vector3.one;
-            
             float radius = bounds.extents.magnitude;
             //Gizmos.DrawWireSphere(bounds.center, radius * 2);
             cam.transform.position = RaySphereIntersectionPoint(new Ray(bounds.center, new Vector3(-2.5f, -1f, -2.5f)), bounds.center, radius * 2);
@@ -84,6 +75,8 @@ namespace ThumbGenExamples
         }
 
         /*
+         * Alternative way to position the camera
+         * 
         private void MoveCamera(Camera cam, Bounds bounds)
         {
             float cameraDistance = 0.5f; // Constant factor
@@ -95,7 +88,6 @@ namespace ThumbGenExamples
             cam.transform.position = bounds.center + distance * Vector3.one;
         }
         */
-
 
         public MeshResultData FindMeshContainerInChildren(GameObject go)
         {

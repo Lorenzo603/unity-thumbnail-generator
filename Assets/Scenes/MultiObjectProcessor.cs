@@ -26,22 +26,6 @@ namespace ThumbGenExamples
 
             ThumbnailGenerator thumbGen = GetComponent<ThumbnailGenerator>();
 
-            /*
-            string[] objectResourceNames =
-            {
-                "objects/Cube",
-                "objects/Cylinder",
-                "objects/Capsule",
-                "objects/Sphere"
-            };
-            */
-            /*
-            DirectoryInfo dir = new DirectoryInfo(assetDir);
-            FileInfo[] info = dir.GetFiles();
-            string[] objectResourceNames = info
-                .Where(f => f.Name.EndsWith(".prefab"))
-                .Select(f => assetDir + "/" + f.Name).ToArray();
-            */
             string projectFolder = Directory.GetParent(Application.dataPath).ToString() + Path.DirectorySeparatorChar;
             Debug.Log("Project Folder: " + projectFolder);
             List<string> objectResourceNames = TraverseFolder(assetDir, projectFolder, excludedDirs.Split(','));

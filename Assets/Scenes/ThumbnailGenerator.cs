@@ -11,22 +11,16 @@ namespace ThumbGenExamples
         public Camera ThumbnailCamera;
 
         public int ThumbnailWidth;
-
         public int ThumbnailHeight;
 
         public Texture2D TextureResult { get; private set; }
 
-        /// <summary>
-        /// If this is not null or empty, the texture is exported as a png to the file system.
-        /// </summary>
         public string ExportFilePathRoot;
 
         void Start()
         {
             ThumbnailWidth = 512;
             ThumbnailHeight = 512;
-
-            //Render("render_manual");
         }
 
         private void AssignRenderTextureToCamera()
@@ -89,17 +83,11 @@ namespace ThumbGenExamples
                 //Debug.Log("filename: " + filename);
                 //Debug.Log("name: " + name);
                 string outputDir = Application.dataPath + ExportFilePathRoot + filename.Replace(name, "");
-                //string dir = System.IO.Path.GetDirectoryName(outputDir);
                 if (!System.IO.Directory.Exists(outputDir))
                 {
                     //Debug.Log("Creating dir");
                     System.IO.Directory.CreateDirectory(outputDir);
                 }
-
-                //foreach (char c in System.IO.Path.GetInvalidFileNameChars())
-                //{
-                //    filename = filename.Replace(c, '_');
-                //}
 
                 string finalPath = string.Format("{0}{1}{2}.png", outputDir, Path.DirectorySeparatorChar, name);
 

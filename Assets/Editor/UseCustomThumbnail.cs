@@ -44,16 +44,11 @@ public class CustomThumbnailRenderer
                     Debug.LogError("Failed to load thumb for " + assetPath);
                 }
 
-                //EditorApplication.RepaintProjectWindow();
-
-                //return tex;
                 Rect drawRect = new Rect(selectionRect.x, selectionRect.y, selectionRect.width, selectionRect.height - 15);
                 EditorGUI.DrawPreviewTexture(drawRect, tex);
             }
 
         }
 
-        // returning null tells to use defaults
-        //return null;
     }
 }
