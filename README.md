@@ -21,7 +21,7 @@ Setup the scene the way you want and finally play the scene.
 
 ## Settings
 * ThumbGen GameObject -> ThumbnailGenerator Component: 
-  * Target Render Texture: 2D texture image that will be used to take snapshots of the prefabs. Width and Height must match with the setting below.
+  * Target Render Texture: 2D texture image that will be used to take snapshots of the prefabs. Width and Height must match with the setting below. This texture must also be assigned to the "Target Texture" field of Main Camera.
   * Thumbnail Camera: Main Camera that will take snapshots of the prefab. When the scene runs, the camera will not actually render to the display.
   * Thumbnail Width
   * Thumbnail Height
