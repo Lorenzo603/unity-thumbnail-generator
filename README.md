@@ -8,6 +8,11 @@ The script will traverse a folder recursively looking for prefabs, it will then 
 This texture will be saved to the Thumbnails folder and will be used as thumbnail for said prefab.
 The editor extension matches thumbnails and prefabs by looking for thumbnails in the Thumbnails folder following the same tree structure as the Asset folder.
 
+## How to use
+You can use these scripts inyour project, it'simportant that CustomThumbnailRenderer stays in the "Editor" folder, the other scripts go together and can be anywhere (but not in "Editor").
+Import prefabs that you want to generate thumbnails of.
+Setup the scene the way you want and finally play the scene.
+
 ## Important Classes
 * Editor/CustomThumbnailRenderer.cs: Editor extension that looks for matching thumbnails when it's time to draw a prefab in the Project Window. If it finds a match, it draws it instead of the default one.
 * MultiObjectProcessor.cs: Traverses the folders recursively to find prefabs.
