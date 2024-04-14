@@ -27,5 +27,5 @@ The editor extension matches thumbnails and prefabs by looking for thumbnails in
 
 
 # Thanks
-Thanks to this blog post for the large majority of the generation code: https://undertheweathersoftware.com/automatic-thumbnail-image-generator-for-3d-objects-in-unity/
-Thanks to this other blog post for explaining the general idea of how to draw customizations on the project window: https://sahildhanju.com/posts/unity-asset-thumbnail-icons/
+* Thanks to this blog post for the large majority of the generation code: https://undertheweathersoftware.com/automatic-thumbnail-image-generator-for-3d-objects-in-unity/
+* Thanks to this other blog post for explaining the general idea of how to draw customizations on the project window: https://sahildhanju.com/posts/unity-asset-thumbnail-icons/
