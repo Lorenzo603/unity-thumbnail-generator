@@ -9,7 +9,7 @@ This texture will be saved to the Thumbnails folder and will be used as thumbnai
 The editor extension matches thumbnails and prefabs by looking for thumbnails in the Thumbnails folder following the same tree structure as the Asset folder.
 
 ## How to use
-You can use these scripts inyour project, it'simportant that CustomThumbnailRenderer stays in the "Editor" folder, the other scripts go together and can be anywhere (but not in "Editor").
+You can use these scripts inyour project, it's important that CustomThumbnailRenderer stays in the "Editor" folder, the other scripts go together and can be anywhere (but not in "Editor").
 Import prefabs that you want to generate thumbnails of.
 Setup the scene the way you want and finally play the scene.
 
