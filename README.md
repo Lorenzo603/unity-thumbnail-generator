@@ -5,7 +5,7 @@ Custom thumbnail generator for the Unity game engine.
 Generate custom thumbnails for prefabs with possibility of controlling lighting/camera and in generally everything in the scene that is used for the generation.
 For example you can control the thumbnail background color by changing the "Environment->Background Type" setting on the scene Main Camera.
 The script will traverse a folder recursively looking for prefabs, it will then instantiate each prefab in the ThumbnailScene and take a "picture" (a.k.a rendering the camera output on a texture). 
-This texture will be saved to the Thumbnails folder and will be used as thumbnail for said prefab.
+This texture will be saved to the Thumbnails folder and will be used as thumbnail for said prefab in the Project Window.
 The editor extension matches thumbnails and prefabs by looking for thumbnails in the Thumbnails folder following the same tree structure as the Asset folder.
 
 ## How to use
